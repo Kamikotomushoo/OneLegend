@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&family=Uncial+Antiqua&display=swap');
+
+
+@mixin threeD-hover-effect($color) {
+  transition: 0.3s;
+  transform: scale(1.5) translate(-50%, -50%);
+  text-shadow:  0px 0px 1px $color,
+  0px 0px 10px $color, 0px 0px 20px $color,0px 0px 30px $color,
+  0px 0px 40px $color, 0px 0px 50px $color, 0px 0px 60px $color,
+  20px 0px 20px $color, -20px 0px 20px $color,
+  40px 0px 20px $color, -40px 0px 20px $color,
+  20px 15px 20px $color, 20px -15px 20px $color,
+  -40px 15px 20px $color, -40px -15px 20px $color;
+
+}
+
+.regions_map_container {
+  width: 100%;
+  height: 100%;
+  .threeD_hover_name {
+    color: rgb(218, 218, 218);
+    white-space: nowrap;
+    position: absolute;
+
+    transform: translate(-50%, -50%);
+    font-size: 2.3rem;
+    font-family: 'Uncial Antiqua', cursive;
+    text-transform: uppercase;
+
+    letter-spacing: 0.1em;
+    transition: 0.3s;
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+
+
+    &.noxus {
+      top: 33%;
+      left: 48%;
+      &:hover {
+        @include threeD-hover-effect(rgb(184, 28, 28))
+      }
+    }
+
+    &.demacia {
+      top: 40%;
+      left: 30%;
+      &:hover {
+        @include threeD-hover-effect(rgb(131, 128, 114))
+      }
+    }
+
+    &.freljord {
+      top: 22%;
+      left: 32%;
+      &:hover {
+        @include threeD-hover-effect(rgb(88, 153, 196))
+      }
+    }
+
+    &.ionia {
+      top: 22%;
+      left: 74%;
+      &:hover {
+        @include threeD-hover-effect(rgb(76, 199, 189))
+      }
+    }
+
+    &.piltover_N_zaun {
+      top: 53%;
+      left: 60%;
+      &:hover {
+        @include threeD-hover-effect(rgb(181, 230, 47))
+      }
+    }
+
+    &.bilgewater {
+      top: 59%;
+      left: 75%;
+      &:hover {
+        @include threeD-hover-effect(rgb(39, 90, 133))
+      }
+    }
+
+
+    &.shadow_isles {
+      top: 76%;
+      left: 85%;
+      &:hover {
+        @include threeD-hover-effect(rgb(72, 47, 92))
+      }
+    }
+
+    &.ixtal {
+      top: 76%;
+      left: 63%;
+      &:hover {
+        @include threeD-hover-effect(rgb(28, 173, 35))
+      }
+    }
+
+    &.shurima {
+      top: 75%;
+      left: 52%;
+      &:hover {
+        @include threeD-hover-effect(rgb(185, 155, 19))
+      }
+    }
+
+    &.targon {
+      top: 78%;
+      left: 40%;
+      &:hover {
+        @include threeD-hover-effect(rgb(126, 26, 219))
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&family=Uncial+Antiqua&display=swap');
+@import url('../../../assets/fonts/fonts-stylesheets.css');
+
+
+%flexibleCentr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  @extend %flexibleCentr;
+  margin: 0;
+  width: 100%;
+  z-index: 1000;
+  position: fixed;
+  h1 {
+    @extend %flexibleCentr;
+    color: white;
+    border: none;
+    background-color: none;
+    width: fit-content;
+    text-transform: uppercase;
+    font-family: 'Uncial Antiqua', cursive;
+    text-shadow:  0 2px 20px rgb(0, 0, 0), 0 10px 30px  rgb(0, 0, 0), 0 -10px 30px  rgb(0, 0, 0),
+     -30px 10px 30px  rgb(0, 0, 0), 30px 10px 30px  rgb(0, 0, 0), 30px 10px 30px  rgb(0, 0, 0), -30px 10px 30px  rgb(0, 0, 0);
+     cursor: pointer;
+  }
+}

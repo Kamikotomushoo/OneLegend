@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap");
+
+.champions_button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: fit-content;
+  height: fit-content;
+  margin-right: 10px;
+  .champions_button_img {
+    padding: 0;
+    width: 70px;
+    height: 70px;
+  }
+  span {
+    padding: 0;
+    font-family: "Cinzel Decorative", cursive;
+    color: rgb(212, 212, 212);
+  }
+
+  &:hover {
+    filter: brightness(150%);
+    span {
+      text-shadow: 0 0 7px rgb(255, 255, 255);
+    }
+  }
+}
