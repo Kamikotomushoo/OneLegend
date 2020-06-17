@@ -4,4 +4,28 @@
   margin: 0;
   padding: 0;
   background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .splash_art{
+    width: 50%;
+    height: 38%;
+    box-shadow:  0  0  100px  rgb(0, 0, 0);
+
+  }
+  .custom_img_border{
+    width: 50%;
+    height: 5px;
+    background:linear-gradient(to right, rgb(0, 0, 0) 0%,rgb(190, 152, 55) 50%,rgb(0, 0, 0)100%) ;
+  }
+
+  h2{
+    color: rgb(218, 218, 218);
+    font-size: 3rem;
+    font-family: 'Uncial Antiqua', cursive;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+  }
+
 }

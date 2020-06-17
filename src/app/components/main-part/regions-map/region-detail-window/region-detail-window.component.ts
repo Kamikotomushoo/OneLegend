@@ -11,10 +11,13 @@ export class RegionDetailWindowComponent implements OnInit {
 
   @Input() regionData: IRegionData;
 
-  constructor(private regionCheckedService: RegionCheckedService) { }
+  constructor(
+    private regionCheckedService: RegionCheckedService
+    ) { }
 
   ngOnInit() {
-    
+    console.log(this.regionData);
+
   }
 
   private close() {
