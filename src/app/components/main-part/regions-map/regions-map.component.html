@@ -1,41 +1,10 @@
-<div class="regions_map_container">
-  <div class="threeD_hover_name noxus">
-    Noxus
+<div class="regions_map_container" >
+  <div
+  *ngFor="let region of regionsDataList"
+    class="threeD_hover_name {{ region.className }}"
+    (click)="openDetail(region)"
+  >
+    {{ region.name }}
   </div>
-  <div class="threeD_hover_name demacia">
-    Demacia
-  </div>
-
-  <div class="threeD_hover_name freljord">
-    Freljord
-  </div>
-
-  <div class="threeD_hover_name ionia">
-      Ionia
-  </div>
-
-  <div class="threeD_hover_name piltover_N_zaun">
-      Piltover & Zaun
-  </div>
-
-  <div class="threeD_hover_name bilgewater">
-      Bilgewater
-  </div>
-
-  <div class="threeD_hover_name shadow_isles">
-      Shadow Isles
-  </div>
-
-  <div class="threeD_hover_name ixtal">
-      Ixtal
-  </div>
-
-  <div class="threeD_hover_name shurima">
-      Shurima
-  </div>
-
-  <div class="threeD_hover_name targon">
-      Targon
-  </div>
-
 </div>
+<app-region-detail-window  *ngIf="isChecked" [regionData]="checkedRegion"></app-region-detail-window>
